@@ -18,7 +18,7 @@ const TRADES = [
 ];
 
 const USERS_DB = [
-  { email: "pm@naples-aob.com", password: "demo", name: "Sarah Chen", role: "General PM", level: "pm", avatar: "SC", trades: ["all"] },
+  { email: "pm@naples-aob.com", password: "demo", name: "Robert Coleman", role: "General PM", level: "pm", avatar: "RC", trades: ["all"] },
   { email: "mech@naples-aob.com", password: "demo", name: "James Rivera", role: "Mechanical Foreman", level: "foreman", avatar: "JR", trades: ["mechanical"] },
   { email: "elec@naples-aob.com", password: "demo", name: "Mike Torres", role: "Electrical Lead", level: "foreman", avatar: "MT", trades: ["electrical"] },
   { email: "plumb@naples-aob.com", password: "demo", name: "Dave Wilson", role: "Plumbing Installer", level: "worker", avatar: "DW", trades: ["plumbing"] },
@@ -79,7 +79,7 @@ const SAMPLE_TICKETS = [
     escalationChain: ["Field Worker", "Trade Foreman", "Trade PM", "General PM"],
     comments: [
       { author: "Dave Wilson", role: "Plumbing Installer", time: "Mar 25, 9:00 AM", text: "Per P202A, the 2\" sanitary line passes directly over the electrical panel location shown on E600A. This is a code concern." },
-      { author: "Sarah Chen", role: "General PM", time: "Mar 26, 8:00 AM", text: "Escalating to architect. We need a revised routing that avoids the electrical room entirely. Meeting scheduled for Thursday." },
+      { author: "Robert Coleman", role: "General PM", time: "Mar 26, 8:00 AM", text: "Escalating to architect. We need a revised routing that avoids the electrical room entirely. Meeting scheduled for Thursday." },
     ]
   },
   {
@@ -97,7 +97,7 @@ const SAMPLE_TICKETS = [
     escalationChain: ["Field Worker", "Trade Foreman", "Trade PM", "General PM"],
     comments: [
       { author: "Mike Torres", role: "Electrical Lead", time: "Mar 20, 11:00 AM", text: "LT-1 pendant fixture at boardroom center conflicts with sprinkler head position per FP201A." },
-      { author: "Sarah Chen", role: "General PM", time: "Mar 22, 3:00 PM", text: "Resolved: Architect approved shifting sprinkler 18\" east. Updated on FP201A Rev 1." },
+      { author: "Robert Coleman", role: "General PM", time: "Mar 22, 3:00 PM", text: "Resolved: Architect approved shifting sprinkler 18\" east. Updated on FP201A Rev 1." },
     ]
   },
 ];
