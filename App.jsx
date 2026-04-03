@@ -503,12 +503,14 @@ function SheetViewer({ sheetId, onNavigate }) {
             </button>
           </div>
         </div>
-        <div className="p-8 flex items-center justify-center min-h-64">
-          <div className="text-center text-gray-400" style={{ transform: `scale(${zoom / 100})`, transition: "transform 0.2s" }}>
-            <FileText className="w-16 h-16 mx-auto mb-3" />
-            <p className="text-lg font-medium">{sheetId}</p>
-            <p className="text-sm">{sheet?.title}</p>
-            <p className="text-xs mt-2 max-w-sm">In the full app, this area renders the actual PDF page from the Naples AOB Construction Drawings with pinch-to-zoom and tap-for-details.</p>
+        <div className="overflow-auto bg-slate-300 w-full relative" style={{ height: "500px" }}>
+          <div style={{ transform: `scale(${zoom / 100})`, transformOrigin: "top left", transition: "transform 0.2s", minWidth: "100%", width: "max-content" }}>
+            <img 
+              src={sheetId.startsWith('G') ? 'G000A.jpg' : sheetId.startsWith('M') ? 'M201A.jpg' : 'A141A.jpg'} 
+              alt={`Blueprint sheet ${sheetId}`} 
+              className="w-full h-auto shadow-sm select-none" 
+              style={{ minWidth: "800px" }}
+            />
           </div>
         </div>
       </div>
